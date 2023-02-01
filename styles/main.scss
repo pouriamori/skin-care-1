@@ -1,0 +1,361 @@
+$text-clr: #343434;
+$background-clr: #f8e367;
+
+// -----------------------------my bs vars-----------------------------
+
+$grid-gutter-width: 0rem !default;
+
+$grad-degree: 45deg;
+
+$primary: #1ebbff;
+$secondary: #fe7b6e;
+$light: #f2f2f2;
+$dark: #222831;
+
+// $success: $green  !default;
+// $info: $cyan  !default;
+// $warning: $yellow  !default;
+// $danger: $red  !default;
+
+
+$btn-padding-y: .25rem;
+$btn-padding-x: 1rem;
+$btn-border-radius: 5px;
+
+$box-shadow: 0 0 1rem rgba(#000, .15);
+$box-shadow-sm: 0 0 .25rem rgba(#000, .075);
+$box-shadow-lg: 0 0 3rem rgba(#000, .175);
+
+
+
+
+// ---------------------------default Bootsrap---------------------------
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+ol,
+ul {
+  padding-left: 0rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+// 1. Undo browser default
+
+dd {
+  margin-bottom: 0rem;
+  margin-left: 0; // 1
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // direction: rtl;
+}
+
+body {
+  font-family: vazir;
+  line-height: 1.5;
+  background-color: $background-clr;
+  color: $text-clr;
+}
+
+
+a {
+  text-decoration: none;
+  color: $text-clr;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0 !important;
+}
+
+i {
+  line-height: 0 !important;
+}
+
+.bg-none {
+  background: none !important;
+}
+
+
+.gap-0 {
+  gap: 0rem;
+}
+
+.gap-1 {
+  gap: .25rem;
+}
+
+.gap-2 {
+  gap: .5rem;
+}
+
+.gap-3 {
+  gap: .75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+
+.form-control::placeholder {
+  color: #ced4da;
+}
+
+.btn:hover {
+  color: white !important;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.shadow {
+  box-shadow: 0px 0px 2rem rgb(0 0 0 / 8%) !important;
+}
+
+.shadow-sm {
+  box-shadow: 0px 0px 1rem rgb(0 0 0 / 5%) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0px 0px 3rem rgb(0 0 0 / 18%) !important;
+}
+
+.trans-all {
+  transition: all 0.3s !important;
+}
+
+.scale-up:hover {
+  transform: scale(1.1) !important;
+}
+
+.hover-primary:hover {
+  color: $primary  !important;
+}
+
+.hover-secondary:hover {
+  color: $secondary  !important;
+}
+
+// -----------------
+
+.bg-transparent-1 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.bg-transparent-2 {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.bg-transparent-3 {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.bg-transparent-4 {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.bg-transparent-5 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.bg-transparent-6 {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.bg-transparent-7 {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.bg-transparent-8 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.bg-transparent-9 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+// --------------
+
+.shadow-primary {
+  box-shadow: 0px 0px 1rem rgba($color: $primary, $alpha: 0.2) !important;
+}
+
+.shadow-secondary {
+  box-shadow: 0px 0px 1rem rgba($color: $secondary, $alpha: 0.2) !important;
+}
+
+// ---------
+
+.grad-secondary-light-1 {
+  background-image: linear-gradient($grad-degree, lighten($secondary, 5%), $secondary);
+}
+
+.grad-secondary-light-2 {
+  background-image: linear-gradient($grad-degree, lighten($secondary, 10%), $secondary);
+}
+
+.grad-secondary-light-3 {
+  background-image: linear-gradient($grad-degree, lighten($secondary, 15%), $secondary);
+}
+
+.grad-secondary-light-4 {
+  background-image: linear-gradient($grad-degree, lighten($secondary, 20%), $secondary);
+}
+
+.grad-secondary-dark-1 {
+  background-image: linear-gradient($grad-degree, $secondary, darken($secondary, 5%));
+}
+
+.grad-secondary-dark-2 {
+  background-image: linear-gradient($grad-degree, $secondary, darken($secondary, 10%));
+}
+
+.grad-secondary-dark-3 {
+  background-image: linear-gradient($grad-degree, $secondary, darken($secondary, 15%));
+}
+
+.grad-secondary-dark-4 {
+  background-image: linear-gradient($grad-degree, $secondary, darken($secondary, 20%));
+}
+
+// ---------
+
+
+
+.grad-primary-light-1 {
+  background-image: linear-gradient($grad-degree, lighten($primary, 5%), $primary);
+}
+
+.grad-primary-light-2 {
+  background-image: linear-gradient($grad-degree, lighten($primary, 10%), $primary);
+}
+
+.grad-primary-light-3 {
+  background-image: linear-gradient($grad-degree, lighten($primary, 15%), $primary);
+}
+
+.grad-primary-light-4 {
+  background-image: linear-gradient($grad-degree, lighten($primary, 20%), $primary);
+}
+
+.grad-primary-dark-1 {
+  background-image: linear-gradient($grad-degree, $primary, darken($primary, 5%));
+}
+
+.grad-primary-dark-2 {
+  background-image: linear-gradient($grad-degree, $primary, darken($primary, 10%));
+}
+
+.grad-primary-dark-3 {
+  background-image: linear-gradient($grad-degree, $primary, darken($primary, 15%));
+}
+
+.grad-primary-dark-4 {
+  background-image: linear-gradient($grad-degree, $primary, darken($primary, 20%));
+}
+
+// -----------
+
+.grad-black-1 {
+  background-image: linear-gradient($grad-degree, lighten(#262626, 10%), #262626);
+}
+
+.grad-black-2 {
+  background-image: linear-gradient($grad-degree, lighten(#262626, 20%), #262626);
+}
+
+.grad-black-3 {
+  background-image: linear-gradient($grad-degree, lighten(#262626, 30%), #262626);
+}
+
+.grad-black-4 {
+  background-image: linear-gradient($grad-degree, lighten(#262626, 40%), #262626);
+}
+
+// -------
+
+
+.grad-white-1 {
+  background-image: linear-gradient($grad-degree, #F5F5F5, darken(#F5F5F5, 10%));
+}
+
+.grad-white-2 {
+  background-image: linear-gradient($grad-degree, #F5F5F5, darken(#F5F5F5, 20%));
+}
+
+.grad-white-3 {
+  background-image: linear-gradient($grad-degree, #F5F5F5, darken(#F5F5F5, 30%));
+}
+
+.grad-white-4 {
+  background-image: linear-gradient($grad-degree, #F5F5F5, darken(#F5F5F5, 40%));
+}
+
+// ---------
+
+.btn {
+  transition: all .3s;
+}
+
+.btn:hover {
+  opacity: 0.9 !important;
+  transform: scale(1.02);
+}
+
+// ---------
+
+.btn {
+  transition: all .3s;
+}
+
+.btn:hover {
+  opacity: 0.9 !important;
+  transform: scale(1.02);
+}
+
+// -----------
+
+#root {
+  overflow: hidden !important;
+}

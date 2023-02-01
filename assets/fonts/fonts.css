@@ -1,0 +1,22 @@
+/* فونت */
+@font-face {
+    font-family: sahel;
+    src: url(./Sahel.ttf);
+}
+
+@font-face {
+    font-family: sahel-black;
+    src: url(./Sahel-Black.ttf);
+}
+
+@font-face {
+    font-family: vazir;
+    src: url(./Vazir.ttf);
+}
+
+@font-face {
+    font-family: yekan;
+    src: url(./Yekan.ttf);
+}
+
+
